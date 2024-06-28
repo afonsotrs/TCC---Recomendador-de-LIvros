@@ -1,0 +1,422 @@
+/* 
+CSS 1 GERAL
+*/
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    color: palevioletred;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 
+CSS 2 CONTAINERS
+*/
+
+
+#container1{  /* menu e sidebar */
+    display: flex;
+    flex-direction: row;
+}
+
+#container1_1 { /* sidebar */
+    display: flex;
+    flex-direction: column;
+}
+
+#container1_2{ /* barra menu */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 1050px;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(216, 112, 147);
+    color: rgb(254, 226, 236);
+    min-width: 100%;
+    max-height: 10vh;
+}
+
+#container2{ /* acervo e resultado */
+    display: flex;
+    flex-direction: column;
+}
+
+#container2_1{  /*acervo*/
+    display: flex;
+    flex-direction: column;
+}
+
+#container2_2 { /*resultado*/
+    display: flex;
+    flex-direction: column;
+}
+
+#container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 20px;
+}
+
+#avaliacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+#container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color: #ec64ba;
+}
+
+#nome{
+    width: 30%;
+    margin-right: 66%;
+    height: 40px;
+}
+
+#opnbnt{
+    width: 30%;
+    padding: 10px;
+    background-color: #f9009e;
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+/* 
+CSS 3 FIELDSET
+*/
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(254, 226, 236);
+    color: palevioletred;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(254, 226, 236);
+    color: palevioletred;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 1px solid;
+    width: 30%;
+    height: 65%;
+    max-width: 400px; 
+    order: 2;
+}
+
+#descricao {  
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    left: 30%;
+    top: 24%;
+}
+
+/* 
+CSS 4 RESULTADOS DOS ACERVOS
+*/
+
+#results {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+#resultbox {
+    display: flex;
+}
+
+/* 
+CSS 5 TITULOS
+*/
+
+#titulo {
+    display: flex;
+    position: absolute;
+    place-items: center;
+    height: 10vh;
+    z-index: 2;
+    justify-content: start;
+    left: 30%; 
+    top: 11%; 
+    color: palevioletred;
+}
+
+#sobretitulo {
+    margin-top: 50px;
+}
+
+/*
+CSS 6 SIDEBAR 
+*/
+
+#sidebar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(254, 226, 236);
+    height: 100vh;
+    border-radius: 0px 0px 18px 0px;
+    position: relative;
+    transition: all .4s;
+    min-width: 100px;
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#open_btn i {
+    color: palevioletred;
+}
+
+.item_description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .5s;
+}
+
+#sidebar.open-sidebar {
+    min-width: 100%;
+}
+
+#sidebar.open-sidebar .item_description {
+    width: 90px;
+}
+
+#sidebar.open-sidebar .side-item{
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+span{
+    color: rgb(216, 112, 147);
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_info span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#side_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    left: 15px;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item:hover {
+    background-color: rgb(255, 192, 241);
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: palevioletred;
+}
+
+/*
+CSS 7 REQUISITOS DE BUSCA 
+*/
+
+.requisitosdebusca {
+    gap: 8px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#requisitosdebusca {
+    gap: 8px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contador {
+    width: 12%;
+}
+
+#ou_primeiroacervo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ou_segundoacervo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+CSS 8 AVALIAÇÃO
+*/
+
+h1 {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 36px; /* Tamanho da fonte */
+    color: palevioletred; /* Cor do texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    position: relative;
+    font-size: 64px; /* Aumenta o tamanho das estrelas */
+    color: #968892; /* Cor do fundo das estrelas */
+    cursor: pointer;
+}
+.rating > .star {
+    display: inline-block;
+    position: relative;
+    width: 1.5em; /* Ajusta a largura das estrelas */
+    transition: color 0.3s; /* Adiciona transição de cor */
+}
+.rating > .star.filled {
+    color: palevioletred; /* Cor das estrelas preenchidas */
+}
+
+/* Definição da animação */
+@keyframes bounce {
+    0% { transform: scaleX(0); } /* Começa sem largura */
+    40% { transform: scaleX(1.5); } /* Cresce rapidamente para a direita */
+    80% { transform: scaleX(1); } /* Retorna ao tamanho normal */
+    100% { transform: scaleX(1); } /* Mantém o tamanho normal */
+}
+
+.anime-character {
+    width: 150px; /* Aumenta o tamanho do GIF */
+    height: 150px; /* Aumenta o tamanho do GIF */
+    margin-top: 20px; /* Posiciona o GIF mais abaixo das estrelas */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s;
+}
+.happy { background-image: url('https://media4.giphy.com/media/wdvtewKr34ylO/200.webp?cid=ecf05e4775f2g04w4aoelpss4th1n8exdgtwlovgd9nf7ahu&ep=v1_gifs_search&rid=200.webp&ct=g'); }
+.neutral { background-image: url('https://media1.tenor.com/m/jYJX-LVnUVEAAAAC/kakashi.gif'); }
+.sad { background-image: url('https://media1.tenor.com/m/acoHkVJ0xCQAAAAC/thanks-a-lot-naruto-shippuden.gif'); }
+
+/* Estilo para a caixa de entrada */
+textarea {
+    width: calc(100% - 20px); /* Ocupa toda a largura disponível com margem de 10px */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    font-size: 16px;
+    margin-top: 20px; /* Adiciona espaço acima da caixa de entrada */
+    resize: none; /* Impede que o usuário redimensione a caixa de texto manualmente */
+    overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+    border: 2px solid #ccc; /* Adiciona uma borda */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+}
+
+/*
+CSS 9 SOBRE
+*/
+
+/*
+CSS 9 LOGOUT 
+*/
+
+.side-item a i, #logout_btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 20px;
+    color: palevioletred;
+}
+
+#divlogout {
+    border-top: 1px solid #6b6b6b;
+    padding: 1px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#logout_btn:hover {
+    background-color: pink;
+}

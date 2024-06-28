@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Gerador de Livros</title>
+    <link rel="stylesheet" href="estiloavalia.css">
+</head>
+<body>
+    <div id="container1">
+        <div id="container1_1">
+            <nav id="sidebar">
+                <div id="sidebar_content">
+                    <div id="user">
+                        <img src="image/robozin.jpg" id="user_avatar" alt="avatar">
+                        <p id="user_info">
+                            <span class="item_description">Funalinho de tal</span>
+                            <span class="item_description">Descrição do usuário</span>
+                        </p>
+                    </div>
+        
+                    <hr>
+            
+                    <ul id="side_item">
+                        <li class="side-item">
+                            <a href="acervoprainiciantes.html">
+                                <i class="fa-solid fa-book"></i>
+                                <span class="item_description">Recomendações para iniciantes</span>
+                            </a>
+                        </li>
+                        <li class="side-item">
+                            <a href="acervobr.html">
+                                <i class="fa-solid fa-book"></i>
+                                <span class="item_description">Autores BR</span>
+                            </a>
+                        </li>
+                        <li class="side-item">
+                            <a href="acervoestrangeiros.html">
+                                <i class="fa-solid fa-book"></i>
+                                <span class="item_description">Estrangeiros</span>
+                            </a>
+                        </li>
+                        <li class="side-item">
+                            <a href="avaliesite.html">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="item_description">Avalie este site</span>
+                            </a>
+                        </li>
+                    </ul>
+            
+                    <button id="open_btn">
+                        <i id="open_btn_icon" class="fa-solid fa-bars"></i>
+                    </button>
+        
+                </div>
+                <div id="divlogout">
+                    <a href="\index.html">
+                        <button id="logout_btn">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span class="item_description">Logout</span>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div id="container1_2">
+            <div id="container3">
+                <h1>Avalie esse site</h1>
+                <div class="rating">
+                    <span class="star" onmouseover="mouseOver(1)" onmouseleave="mouseLeave(1)" onclick="rate(1)">&#9734;</span>
+                    <span class="star" onmouseover="mouseOver(2)" onmouseleave="mouseLeave(2)" onclick="rate(2)">&#9734;</span>
+                    <span class="star" onmouseover="mouseOver(3)" onmouseleave="mouseLeave(3)" onclick="rate(3)">&#9734;</span>
+                    <span class="star" onmouseover="mouseOver(4)" onmouseleave="mouseLeave(4)" onclick="rate(4)">&#9734;</span>
+                    <span class="star" onmouseover="mouseOver(5)" onmouseleave="mouseLeave(5)" onclick="rate(5)">&#9734;</span>
+                </div>
+                
+                <!-- Movendo o gif para ficar ao lado das estrelas -->
+                <div class="anime-character" id="animeCharacter"></div>
+            
+                <!-- Adicionando a caixa de entrada -->
+                <textarea id="nome" placeholder="Digite seu nome" oninput="updateCharCount()"></textarea>
+                <textarea id="opinion" placeholder="Digite sua opinião" oninput="updateCharCount()"></textarea>
+                <div id="charCount">0/500</div>
+                <div id="charLimitMessage">Você excedeu o limite de 500 caracteres!</div>
+                <button id="opnbnt" onclick="submitOpinion()">Enviar Opinião</button>
+                <script src="scriptanimacao.js"></script>
+            </div>
+            <div id="posts">
+            </div>
+            <div id="container4">
+                <h1 id="sobretitulo">sobre</h1>
+                <p>Este site é um projeto desenvolvido por alunos do IFRN que servirá de material para a produção de um TCC. Nele, o usuário poderá receber recomendações de livros baseado em suas preferências que serão capturadas por um formulário. O site possui 3 formulários para 3 acervos difentes de livros, além disso, possui um sistema de login no qual recebe o email e senha do usuário para realizar o cadastro</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="scriptsidebar.js"></script>
+</body>
+</html>

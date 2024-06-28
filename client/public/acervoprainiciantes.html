@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Gerador de Livros</title>
+</head>
+<body>
+    <div id="maedetodas">
+        <div id="container1">
+            <div id="container1_1">
+                <nav id="sidebar">
+                    <div id="sidebar_content">
+                        <div id="user">
+                            <img src="image/robozin.jpg" id="user_avatar" alt="avatar">
+                            <p id="user_info">
+                                <span class="item_description">Funalinho de tal</span>
+                                <span class="item_description">Descrição do usuário</span>
+                            </p>
+                        </div>
+            
+                        <hr>
+                
+                        <ul id="side_item">
+                            <li class="side-item">
+                                <a href="acervoprainiciantes.html">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span class="item_description">Recomendações para iniciantes</span>
+                                </a>
+                            </li>
+                            <li class="side-item">
+                                <a href="acervobr.html">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span class="item_description">Autores BR</span>
+                                </a>
+                            </li>
+                            <li class="side-item">
+                                <a href="acervoestrangeiros.html">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span class="item_description">Estrangeiros</span>
+                                </a>
+                            </li>
+                            <li class="side-item">
+                                <a href="avaliesite.html">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="item_description">Avalie este site</span>
+                                </a>
+                            </li>
+                        </ul>
+                
+                        <button id="open_btn">
+                            <i id="open_btn_icon" class="fa-solid fa-bars"></i>
+                        </button>
+            
+                    </div>
+                    <div id="divlogout">
+                        <a href="/index.html">
+                            <button id="logout_btn">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span class="item_description">Logout</span>
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div id="container1_2">
+            </div>
+        </div>
+        <div id="container2">
+            <div id="container2_1">
+                <h1 id="titulo">
+                    Acervo de leitores iniciantes
+                </h1>
+                <h4 id="descricao">Utilize este acervo para buscar livros baseados no gênero</h4>
+                <fieldset>
+                    <h1>Acervo de Livros</h1>
+                    <form id="searchForm">
+                        <label for="genreSelect">Selecione o Gênero:</label>
+                        <select id="genreSelect">
+                            <option value="" disabled selected>Selecione um gênero</option>
+                            <option value="fantasy">Fantasia</option>
+                            <option value="mystery">Mistério</option>
+                            <option value="romance">Romance</option>
+                            <option value="horror">Terror</option>
+                            <option value="children">Infantil</option>
+                            <option value="action">Ação</option>
+                            <option value="drama">Drama</option>
+                        </select>
+                        <button type="submit">Consultar Livros</button>
+                    </form>
+                </fieldset>       
+            </div>
+            <div id="container2_2">
+                <div id="results"></div>          
+                <script src="scriptprainiciantes.js"></script>
+            </div>
+        </div>
+    <script src="scriptsidebar.js"></script>
+</body>
+</html>
